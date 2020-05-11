@@ -1,0 +1,9 @@
+export const INIT_SIDE_EFFECTS = "INIT SIDE EFFECTS";
+export const REQUEST_IN_PROGRESS = "REQUEST IN PROGRESS";
+export const REQUEST_SUCCESS = "REQUEST SUCCESS";
+export const REQUEST_FAILED = "REQUEST FAILED";
+export const SIDE_EFFECTS_COMPLETED = "SIDE EFFECTS COMPLETED";
+
+export const loadImage = () => ({
+    type: INIT_SIDE_EFFECTS
+});

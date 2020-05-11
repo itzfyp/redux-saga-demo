@@ -1,0 +1,74 @@
+$primary-color : #7676ff;
+$default-color : #ffffff;
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+.btn {
+    padding: 10px 15px;
+    background: $primary-color;
+    box-shadow: 1px 1px 1px 0px  rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    color:$default-color;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    &-header {
+        min-height: 58px;
+        box-shadow: 1px 1px 1px 0px  rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 15px;
+        h1 {
+            margin: 0 0 5px 0;
+        }
+        nav {
+            padding: 5px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+            a {
+                padding: 0px 15px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .info-card {
+            box-shadow: 0px 1px 1px 1px  rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        .panel-container {
+            display: flex;
+            width: 70%;
+            justify-content: space-evenly;
+            .panel {
+                text-align: center;
+                padding: 10px;
+                border: 1px solid #cccccc;
+                flex: 1;
+                height: 300px;
+                img {
+                    max-width: 300px;
+                    height: 100%;
+                }
+                > p:first-child {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
